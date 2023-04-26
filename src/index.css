@@ -6,11 +6,12 @@
 
 :root{
    font-family: 'Poppins', sans-serif;
+   font-size: medium;
 
 }
 
 body{
-  background-color: white;
+  background-color: gainsboro;
 
 }
 
@@ -37,3 +38,9 @@ li{
  .card{
   background:#000 ;
  }
+ .navbar{
+
+}
+.search.flex{
+  justify-content: center;
+}

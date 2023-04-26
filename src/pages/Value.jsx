@@ -1,8 +1,9 @@
 import React from "react";
-import logo1 from "../../Assets/logo1.png"
+import logo1 from '../Assets/logo1.png'
 
 const Value = () => {
-  return( <div className="mb-[4rem] mt-[6rem]">
+  return(
+     <div className="mb-[4rem] mt-[6rem]">
      <h1 className="text-textColors text-[25px] py-[2rem] pb-[2rem] font-bold w-[400px]block">
       The value that  holds us treue and to account
       </h1> 

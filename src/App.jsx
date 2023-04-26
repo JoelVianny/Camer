@@ -1,19 +1,24 @@
 import React from "react";
-import Footer from "./Compoments/FooterDiv/Footer";
-import Jobs from "./Compoments/JobDiv/Jobs";
-import NavBar from "./Compoments/NavBar/NavBar";
-import Search from "./Compoments/SearchDiv/Search";
-import Value from "./Compoments/ValueDiv/Value";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Jobs from "./pages/Jobs";
+import Value from "./pages/Value";
+
 
 const App = () => {
   return(
-    <div className="w-[85%] m-auto bg-white">
-      <NavBar/>
-      <Search/>
-      <Jobs/>
-      <Value/>
-      <Footer/>
-    </div>
+<>
+<BrowserRouter>
+    <Routes>
+     <Route path="/" element={<Layout/>}>
+     <Route index element={<Jobs/>}/>
+     <Route path="/value" element={<Value/>}/>
+     </Route>
+    </Routes>
+    </BrowserRouter>
+</>
+  
+
     )
 };
 
