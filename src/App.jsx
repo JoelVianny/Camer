@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Jobs from "./pages/Jobs";
 import Value from "./pages/Value";
+import Article from "./pages/Article";
+import ProductDetails from "./pages/ProductDetails";
 
 
 const App = () => {
@@ -11,8 +13,11 @@ const App = () => {
 <BrowserRouter>
     <Routes>
      <Route path="/" element={<Layout/>}>
-     <Route index element={<Jobs/>}/>
+     <Route  element={<Jobs/>}/>
      <Route path="/value" element={<Value/>}/>
+     <Route index element={<Article/>}/>
+     <Route path="/product" element={<ProductDetails/>}/>
+
      </Route>
     </Routes>
     </BrowserRouter>
