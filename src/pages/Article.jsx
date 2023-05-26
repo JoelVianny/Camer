@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Search from './Search'
+// import api from "../client/api/axiosConfig";
+import axios from 'axios';
 
 const Data = [
     {
@@ -154,7 +156,19 @@ const Data = [
     },
   ];
 
-const Article = () => { 
+  
+const Article = ( ) => { 
+
+// const [product , setProduts] = useEffect([]);
+
+useEffect( () => {
+LoadProducts();
+}, []);
+const LoadProducts= async ()=>{
+  const result =await axios.get("http://localhost:8080/public/products/all")
+  console.log(result);
+}
+
   return (
     <section class=" justify-center py-20">
         <Search/>
