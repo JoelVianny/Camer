@@ -13,6 +13,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 4,
@@ -43,6 +46,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 5,
@@ -53,6 +57,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 6,
@@ -63,6 +68,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 7,
@@ -73,6 +79,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 8,
@@ -83,6 +90,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 9,
@@ -93,6 +101,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 10,
@@ -103,6 +112,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 11,
@@ -113,6 +123,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 12,
@@ -123,6 +134,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 13,
@@ -133,6 +145,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 14,
@@ -143,6 +156,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
     {
       id: 15,
@@ -153,6 +167,7 @@ const Data = [
       description:
         " Lorem ipsum , dolor sit amet consecteur aduipojsbnjn elit. Corrpti, laborisum",
       company: "Cameroun Market place",
+      person: "/src/Assets/person.jpg"
     },
   ];
 
@@ -176,7 +191,7 @@ const LoadProducts= async ()=>{
     <div class="mx-auto justify-center grid max-w-screen-xl  grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-4 item ">
      {
         Data.map(
-            ( {id, image ,title , location, description,company}) =>{
+            ( {id, image ,title , location, description,company,person}) =>{
                 return(
                     <article key={id} class="rounded-xl bg-white p-3 shadow-lg hover:shadow-xl">
                     <a href="#">
@@ -201,11 +216,19 @@ const LoadProducts= async ()=>{
                           </p>
                           
               
-                          <div class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200">
+                          {/* <div class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200">
                             <svg xmlns="http://www.w3.org/2000/svg" class="group-hover:text-blue-500 h-4 w-4 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
                               <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
                             </svg>
-                          </div>
+                            
+                          </div> */}
+                          {/* <div class="group inline-flex rounded-xl bg-blue-100 p-2 hover:bg-blue-200"> */}
+                          <div class="mt-3">
+    <img class="w-10 h-10 rounded-full" src={person} alt=""/>
+    <p class="text-slate-400 mt-1 text-sm">Monday</p>
+</div>
+       
+                          {/* </div> */}
                           
                         </div>
                         <p class="text-slate-400 mt-1 text-sm">Monday 1 May, 01:01</p>

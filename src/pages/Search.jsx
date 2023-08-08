@@ -10,7 +10,7 @@ const categories =[
   },
   {
     id:2,
-    names:"Appartement"
+    names:"Voitures"
   },
   {
     id:3,
@@ -24,21 +24,19 @@ const categories =[
 ]
 const Search = () => {
   return( 
-  //   <h1 class="text-center mt-10 text-4xl font-bold">
-  //   Search all you want
-  // </h1>
 
 	<div class=" rounded-xl m-10 mx-auto max-w-screen-lg  md:p-8  px-8">
     
     <div class="flex flex-col gap-3 sm:flex-row bg-white p-8 ">
     <div class="grid gap-2 place-items-center">
-            <form methode="get" action="#" class="relative z-50">
+         <form methode="get" action="#" class="relative z-50">
               <button type="submit" id="searchsubmit" class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                 </svg>
               </button>
-              <input type="text" name="s" id="s" class="w-full flex-1 pl-10 pr-[15rem] py-2 border border-transparent rounded-md leading-5 bg-blue-100 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:text-gray-900 sm:text-sm transition duration-150 ease-in-out" placeholder="Search"/>
+              <input type="search" id="default-search" class="block p-2.5 w-96 z-20 flex-1 pl-10  py-2  border border-transparent rounded-md leading-5 bg-blue-100 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search ..." required></input>
+              {/* <input type="text" name="s" id="s" class="block p-2.5 w-96 z-20 flex-1 pl-10  py-2 border border-transparent rounded-md leading-5 bg-blue-100 text-gray-300 placeholder-gray-400 focus:outline-none focus:bg-white focus:text-gray-900 sm:text-sm transition duration-150 ease-in-out" placeholder="Search"/> */}
             </form>
           </div>
       <div class="flex py-3 px-4 rounded-lg text-gray-500 font-semibold cursor-pointer">
